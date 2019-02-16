@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos Básicos en JQuery</title>
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Francisco Ramírez Ruiz - Angelo Barbara">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Efectos Básicos JQuery</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html#hide" id="menu1">.hide()</a></li>
+            <li><a href="index.html#hide" id="menu2">.show()</a></li>
+            <li><a href="index.html#toggle" id="menu3">.toggle()</a></li>
+            <li><a href="index.html#fadeIn" id="menu4">.fadeIn()</a></li>
+            <li><a href="index.html#fadeOut" id="menu5">.fadeOut()</a></li>
+            <li><a href="index.html#fadeTo" id="menu6">.fadeTo()</a></li>
+            <li><a href="index.html#fadeToggle" id="menu7">.fadeToggle()</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Francisco Ramírez Y Angelo Barbara</h2>
+        <h3>Guía sobre los efectos con sus velocidades y complete</h3>
+
+        <section>
+            <!--Efecto .hide() -->
+            <article>
+                <h3>Parámetros comúnes de los efectos</h3>
+                <p>duration (opcional) --> Velocidad de la animación en milisegundos sus valores son "slow(600)",
+                    "fast(400)" o "(número)"</p>
+                <p>easing (opcional) --> Tipo de animación "linea" o "swing (defecto)" linear sería una animación
+                    constante y swing con cambios.</p>
+                <p>callback (opcional) --> Función a ejecutarse una vez finalizada la animación</p>
+            </article>
+
+            <!--Efecto .hide() y .show()-->
+            <article id="hide">
+                <h3>Efecto .hide() y .show()</h3>
+                <p>Se encargan de ocultar y mostrar respectivamente elementos del DOM.</p>
+                <p>El uso de estas dos emulan la funcionalidad básica de .toggle()</p>
+                <p>Su sintaxis es la siguiente: $(selector).hide(duration [,easing][,callback]</p>
+                <br>
+                <div id="hide-1" class="color-1">(CLICK ME) Slow - Linear - Callback</div> <br>
+                <div id="hide-2" class="color-2">Fast</div>
+            </article>
+
+            <!-- Efecto toogle() -->
+            <article id="toggle">
+                <h3>Efecto .toggle</h3>
+                <p> Se usa en casos para ocultar y mostrar elementos de una página web</p>
+                <p>Su sintaxis es la siguiente: $(selector).toggle(duration [,easing][,callback]</p>
+                <p>También dispone de un display: .toggle (display), false = hide, true = show</p>
+                <br>
+                <div id="hide-3" class="color-5">(CLICK ME) Fast - Linear</div> <br>
+                <div id="hide-4" class="color-3">(CLICK ME) 5000 - Swing - <span id="display"></span></div> <br>
+                <div id="hide-5" class="color-1">Display</div>
+            </article>
+
+            <!-- Efecto fadeIN() -->
+            <article id="fadeIn">
+                <h3>Efecto .fadeIN</h3>
+            </article>
+
+            <!-- Efecto fadeOut() -->
+            <article id="fadeOut">
+                <h3>Efecto .fadeOut</h3>
+            </article>
+
+            <!-- Efecto fadeTo() -->
+            <article id="fadeTo">
+                <h3>Efecto .fadeTo</h3>
+            </article>
+
+            <!-- Efecto fadeToggle() -->
+            <article id="fadeToggle">
+                <h3>Efecto .fadeToggle</h3>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div>* Realizado por Francisco y Angelo *</div>
+    </footer>
+</body>
+
+</html>
