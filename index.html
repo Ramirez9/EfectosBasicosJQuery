@@ -39,7 +39,7 @@
                 <p>duration (opcional) --> Velocidad de la animación en milisegundos sus valores son "slow(600)",
                     "fast(400)" o "(número)"</p>
                 <p>easing (opcional) --> Tipo de animación "linea" o "swing (defecto)" linear sería una animación
-                    constante y swing con cambios.</p>
+                        constante y swing con cambios.</p>
                 <p>callback (opcional) --> Función a ejecutarse una vez finalizada la animación</p>
             </article>
 
@@ -68,22 +68,34 @@
 
             <!-- Efecto fadeIN() -->
             <article id="fadeIn">
-                <h3>Efecto .fadeIN</h3>
-            </article>
-
-            <!-- Efecto fadeOut() -->
-            <article id="fadeOut">
-                <h3>Efecto .fadeOut</h3>
+                <h3>Efecto .fadeIn y .fadeOut</h3>
+                <p> Se usan para ocultar y mostrar elementos de una página web. La diferencia entre fadeIn(), fadeOut() y show(), hide()
+                    es que los primeros dos afectan solo la opacidad de los elementos y además si no se especifica ningún parametro
+                    de tiempo realiza una transición, el cambio de un estado a otro no ocurre inmediatamente.
+                </p>
+                <p>Su sintaxis es la siguiente: $(selector).fadeIn(duration [,easing][,callback]</p>
+                <br>
+                <div id="hide-6" class="color-5">(CLICK ME) fadeIn()/fadeOut() - 2000 - swing</div> <br>
+                <div id="hide-7" class="color-3">(CLICK ME) fadeIn()/fadeOut() - 2000 - linear </div> <br>
             </article>
 
             <!-- Efecto fadeTo() -->
             <article id="fadeTo">
                 <h3>Efecto .fadeTo</h3>
+                <p> 
+                    El método .fadeTo() ajusta gradualmente la opacidad de un elemento.</p>
+                <p>Su sintaxis es la siguiente: $(selector).fadeTo( duration, opacity [, complete ] )</p>
+                <br>
+                <div id="hide-8" class="color-5">(CLICK ME) fast - random - <span id="display-rand"></span></div> <br>
             </article>
 
             <!-- Efecto fadeToggle() -->
             <article id="fadeToggle">
                 <h3>Efecto .fadeToggle</h3>
+                <p> combina ambos efectos de fadeIn() y fadeOut(). Si el elemento está visible, se desvanece; si está oculto, el elemento se muestra</p>
+                <p>Su sintaxis es la siguiente: $(selector).fadeToggle(duration [,easing][,callback]</p>
+                <br>
+                <div id="hide-9" class="color-5">(CLICK ME) 2000 - Linear</div> <br>
             </article>
         </section>
 
