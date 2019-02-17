@@ -82,9 +82,34 @@
   }
 
   function tercerArticle() {
+    // $("#hide-6").on("click", function() {
+    //   $(this).fadeOut(2000, "swing", function() {
+    //     $(this).fadeIn(2000, "linear");
+    //   });
+    // });
+
     $("#hide-6").on("click", function() {
-      $(this).fadeOut(2000, "swing", function() {
-        $(this).fadeIn(2000, "linear");
+      $(this).fadeOut({
+        duration : 2000,
+        start: $("#hide-7").fadeOut(2000),
+        step: function(){ //A function to be called for each animated property of each animated element.
+          $("#hide-7").fadeIn(2000)
+          //console.log('step');
+        },
+        progress: function(){ //A function to be called after each step of the animation.
+          //$("#hide-7").fadeOut('fast')
+          //console.log('en progreso');
+        },
+        complete: function(){ //A function that is called once the animation on an element is complete.
+          $(this).fadeIn(2000, "linear")
+          console.log('complete');
+        },   
+        done: function(){ //A function to be called when the animation on an element completes.
+          console.log('done');
+        },
+        fail: function(){ //A function to be called when the animation on an element fails to complete.
+          console.log('ha fallado');
+        }
       });
     });
 
