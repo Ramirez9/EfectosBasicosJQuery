@@ -36,23 +36,26 @@
             <!--Efecto .hide() -->
             <article>
                 <h3>Parámetros comúnes de los efectos</h3>
-                <p>duration (opcional) --> Velocidad de la animación en milisegundos sus valores son "slow(600)",
-                    "fast(400)" o "(número)"</p>
-                <p>easing (opcional) --> Tipo de animación "linea" o "swing (defecto)" linear sería una animación
-                        constante y swing con cambios.</p>
-                <p>callback (opcional) --> Función a ejecutarse una vez finalizada la animación</p>
-                <br>
-                <p>También es posible definir un objeto literal con las siguietes propriedades:</p>
-                <p>duration --> Velocidad de la animación en milisegundos</p>
-                <p>easing --> Tipo de animación</p>
-                <p>queue --> Booleano que indica si colocar la animación en la cola de efectos.</p>
-                <p>step --> Una función invocada por cada una de las propiedades de la animación de cada uno de los elementos</p>
-                <p>progress --> Una función invocada después de cada paso de la animación, solo una vez por elemento animado independientemente del número de propiedades animadas</p>
-                <p>complete --> Una función invocada cuando la animación termina</p>
-                <p>start -->  Una función invocada cuando la animación comienza</p>
-                <p>done --> Una función invocada cuando la animación termina</p>
-                <p>fail -->  Una función invocada cuando la animación falla</p>
-                <p>always -->  Una función invocada che siempre se invoca</p>
+                <span></span>
+                <p>duration (opcional): <span>Velocidad de la animación en milisegundos sus valores son "slow(600)",
+                        "fast(400)" o "(número)" </span></p>
+                <p>easing (opcional): <span>Tipo de animación "linea" o "swing (defecto)" linear sería una animación
+                        constante y swing con cambios.</span></p>
+                <p>callback (opcional):<span> Función a ejecutarse una vez finalizada la animación.</span></p>
+                <br>.
+                <p>También es posible definir un objeto literal con las siguietes propiedades:</p>
+                <p>duration: <span>Velocidad de la animación en milisegundos.</span></p>
+                <p>easing: <span>Tipo de animación.</span></p>
+                <p>queue: <span>Booleano que indica si colocar la animación en la cola de efectos.</span></p>
+                <p>step: <span>Una función invocada por cada una de las propiedades de la animación de cada uno de los
+                        elementos.</span></p>
+                <p>progress: <span>Una función invocada después de cada paso de la animación, solo una vez por elemento
+                        animado independientemente del número de propiedades animadas.</span></p>
+                <p>complete: <span>Una función invocada cuando la animación termina.</span></p>
+                <p>start: <span>Una función invocada cuando la animación comienza.</span></p>
+                <p>done: <span>Una función invocada cuando la animación termina.</span></p>
+                <p>fail: <span>Una función invocada cuando la animación falla.</span></p>
+                <p>always:<span> Una función invocada che siempre se invoca.</span></p>
             </article>
 
             <!--Efecto .hide() y .show()-->
@@ -60,7 +63,7 @@
                 <h3>Efecto .hide() y .show()</h3>
                 <p>Se encargan de ocultar y mostrar respectivamente elementos del DOM.</p>
                 <p>El uso de estas dos emulan la funcionalidad básica de .toggle()</p>
-                <p>Su sintaxis es la siguiente: $(selector).hide(duration [,easing][,callback]</p>
+                <p>Su sintaxis es la siguiente: <span> $(selector).hide(duration [,easing][,callback] </span></p>
                 <br>
                 <div id="hide-1" class="color-1">(CLICK ME) Slow - Linear - Callback</div> <br>
                 <div id="hide-2" class="color-2">Fast</div>
@@ -69,9 +72,9 @@
             <!-- Efecto toogle() -->
             <article id="toggle">
                 <h3>Efecto .toggle</h3>
-                <p>Se usa en casos para ocultar y mostrar elementos de una página web</p>
-                <p>Su sintaxis es la siguiente: $(selector).toggle(duration [,easing][,callback]</p>
-                <p>También dispone de un display: .toggle (display), false = hide, true = show</p>
+                <p>Se usa en casos para ocultar y mostrar elementos de una página web.</p>
+                <p>Su sintaxis es la siguiente: <span>$(selector).toggle(duration [,easing][,callback] </span></p>
+                <p>También dispone de un display: <span>.toggle (display), false = hide, true = show </span></p>
                 <br>
                 <div id="hide-3" class="color-5">(CLICK ME) Fast - Linear</div> <br>
                 <div id="hide-4" class="color-3">(CLICK ME) 5000 - Swing - <span id="display"></span></div> <br>
@@ -81,11 +84,13 @@
             <!-- Efecto fadeIN() -->
             <article id="fadeIn">
                 <h3>Efecto .fadeIn y .fadeOut</h3>
-                <p> Se usan para ocultar y mostrar elementos de una página web. La diferencia entre fadeIn(), fadeOut() y show(), hide()
-                    es que los primeros dos afectan solo la opacidad de los elementos y además si no se especifica ningún parametro
+                <p> Se usan para ocultar y mostrar elementos de una página web. La diferencia entre fadeIn(), fadeOut()
+                    y show(), hide()
+                    es que los primeros dos afectan solo la opacidad de los elementos y además si no se especifica
+                    ningún parametro
                     de tiempo realiza una transición, el cambio de un estado a otro no ocurre inmediatamente.
                 </p>
-                <p>Su sintaxis es la siguiente: $(selector).fadeIn(duration [,easing][,callback]</p>
+                <p>Su sintaxis es la siguiente: <span>$(selector).fadeIn(duration [,easing][,callback]</span></p>
                 <br>
                 <div id="hide-6" class="color-5">(CLICK ME) fadeIn()/fadeOut() - 2000 - swing</div> <br>
                 <div id="hide-7" class="color-3">(CLICK ME) fadeIn()/fadeOut() - 2000 - linear </div> <br>
@@ -94,9 +99,9 @@
             <!-- Efecto fadeTo() -->
             <article id="fadeTo">
                 <h3>Efecto .fadeTo</h3>
-                <p> 
+                <p>
                     El método .fadeTo() ajusta gradualmente la opacidad de un elemento.</p>
-                <p>Su sintaxis es la siguiente: $(selector).fadeTo( duration, opacity [, complete ] )</p>
+                <p>Su sintaxis es la siguiente: <span>$(selector).fadeTo( duration, opacity [, complete ] )</span></p>
                 <br>
                 <div id="hide-8" class="color-5">(CLICK ME) fast - random - <span id="display-rand"></span></div> <br>
             </article>
@@ -104,8 +109,9 @@
             <!-- Efecto fadeToggle() -->
             <article id="fadeToggle">
                 <h3>Efecto .fadeToggle</h3>
-                <p>Combina ambos efectos de fadeIn() y fadeOut(). Si el elemento está visible, se desvanece; si está oculto, el elemento se muestra</p>
-                <p>Su sintaxis es la siguiente: $(selector).fadeToggle(duration [,easing][,callback]</p>
+                <p>Combina ambos efectos de fadeIn() y fadeOut(). Si el elemento está visible, se desvanece; si está
+                    oculto, el elemento se muestra.</p>
+                <p>Su sintaxis es la siguiente: <span>$(selector).fadeToggle(duration [,easing][,callback]</span></p>
                 <br>
                 <div id="hide-9" class="color-5">(CLICK ME) 2000 - Linear</div> <br>
             </article>

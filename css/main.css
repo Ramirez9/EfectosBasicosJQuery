@@ -19,6 +19,9 @@ h1, h2, h3 {
 	text-align: center;
 }
 
+span{
+	color: rgb(21, 23, 156);
+}
 nav {
 	padding: 5px;
 	text-align: center;
@@ -72,9 +75,12 @@ section>article:nth-child(even) {
 }
 
 section>article>h3 {
-	color: black;
+	font-size: 30px;
+	color: rgb(236, 78, 4);
 }
-
+#display{
+	color: white;
+}
 section>article div {
 	padding: 0.6rem;
     text-align: justify;

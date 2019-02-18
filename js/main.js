@@ -93,11 +93,11 @@
         duration : 2000,
         start: $("#hide-7").fadeOut(2000),
         step: function(){ //A function to be called for each animated property of each animated element.
-          $("#hide-7").fadeIn(2000)
-          //console.log('step');
+          $("#hide-7").fadeIn("fast")
+          console.log('step');
         },
         progress: function(){ //A function to be called after each step of the animation.
-          //$("#hide-7").fadeOut('fast')
+          $("#hide-7").fadeOut('fast')
           //console.log('en progreso');
         },
         complete: function(){ //A function that is called once the animation on an element is complete.
@@ -132,13 +132,12 @@
     });
   }
 
-  function quintoArticle() {
+  function quintoArticle(){
     $("#hide-9").on("click", function() {
-      $(this).fadeToggle(2000, function(){
-          $(this).fadeToggle(2000);
-      });
+      $(this).fadeToggle(2000).fadeToggle(2000);
     });
   }
+
 
   $(init);
 }
